@@ -1,0 +1,330 @@
+* {
+  font-family: 'Pacifico', cursive;
+}
+
+.nav .nav-brand-link {
+  padding: 0;
+}
+
+.nav-brand-img {
+  height: 50px;
+}
+
+.flag {
+  height: 24px;
+}
+
+.nav .icon {
+  display: table-cell;
+}
+
+/*HOME*/
+.home {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.home-img-container {
+  width: 66%;
+}
+
+.home-img-pic {
+  width: 100%;
+}
+
+.home-text {
+  padding: 100px 10px 0;
+  width: 34%;
+}
+
+/*CONTACT*/
+.contact {
+  background: url(../P1260586+1.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 769px) {
+  .contact {
+    background-size: 100% 100%;
+    height: 640px;
+  }
+}
+
+.panel {
+  margin-top: 80px;
+  opacity: 0.8;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 769px) {
+  .panel {
+    width: 60%;
+  }
+}
+
+/*GALLERIES*/
+.galleries-container {
+  background: url(../P1240065+2.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 769px) {
+  .galleries-container {
+    background-size: 100% 100%;
+    height: 640px;
+  }
+}
+
+.galleries {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 100px;
+  max-width: 1010px;
+}
+
+@media screen and (min-width: 769px) {
+  .galleries {
+    flex-wrap: nowrap;
+    padding-top: 280px;
+  }
+}
+.galleries-card-link {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  position: relative;
+  transition: all .2s ease-in-out;
+  width: calc(50% - 5px);
+}
+
+@media screen and (min-width: 769px) {
+  .galleries-card-link {
+    width: initial;
+    margin: 5px;
+  }
+}
+
+.galleries-card-link:hover {
+  transform: scale(.95);
+}
+
+.galleries-card-img {
+  display: block;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.galleries-card-text {
+  bottom: -10px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  left: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.galleries-card-text1 {
+  background-color: rgba(81, 168, 42, .75);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.galleries-card-text2 {
+  background-color: rgba(181, 68, 242, .75);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.galleries-card-text3 {
+  background-color: rgba(242, 157, 9, .75);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.galleries-card-text4 {
+  background-color: rgba(253, 99, 139, .75);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.galleries-card-text5 {
+  background-color: rgba(41, 187, 148, .75);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+/*ANIMATIONS*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -360deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -360deg);
+  }
+
+  25% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -270deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -270deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -180deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -180deg);
+  }
+
+  75% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+  }
+}
+
+@keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -360deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -360deg);
+
+  }
+
+  25% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -270deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -270deg);
+
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -180deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -180deg);
+  }
+
+  75% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+  }
+}
+
+.animated.flip {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: flip;
+  animation-name: flip;
+}
+
+/*GALLERIES*/
+.galleries-carousel-container {
+  height: 100vh;
+  background: rgba(81, 168, 42, .75);
+	background: -moz-linear-gradient(rgba(81, 168, 42, .75), #000000);
+	background: -o-linear-gradient(rgba(81, 168, 42, .75), #000000);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(81, 168, 42, .75)), to(#000000));
+	background: -webkit-linear-gradient(rgba(81, 168, 42, .75), #000000);
+}
+.carousel-container .container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#myCarousel {
+  margin-top: 31px;
+}
+
+@media screen and (min-width: 769px) {
+  #myCarousel {
+    margin-top: 36px;
+  }
+}
+/*.carousel-container {
+  margin: auto 0;
+  padding: 0;
+}*/
+/*CAROUSEL*/
+/*.carousel-container {
+  width: 210px;
+  height: 140px;
+  position: relative;
+  margin: auto;
+  top: 200px;
+}*/
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 200;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: auto;
+  height: 66.9433vw;
+  max-height: 66.9433vw;
+    margin: auto;
+}
+@media screen and (min-width: 769px) {
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: auto;
+    height: 500px;
+    max-height: 500px;  }
+}

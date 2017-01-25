@@ -1,0 +1,28 @@
+[
+    {
+      "menuHome": "Home",
+      "menuGalleries": "Galleries",
+      "menuContactMe": "Contact me",
+      "homeText1": "English Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "homeText2": "English Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "homeText3": "English Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "galleriesBabyAndChild": "Baby & Child",
+      "galleriesMaternity": "Maternity",
+      "galleriesFamily": "Family",
+      "galleriesPortrait": "Portrait",
+      "galleriesNature": "Nature",
+      "contactContactForm": "Contact Form",
+      "contactName": "Name",
+      "contactEmail": "Email",
+      "contactSubject": "Subject",
+      "contactMessage": "Message",
+      "contactSendMessage": "Send Message",
+      "contactSuccess": "Thank you! I have received your message.",
+      "contactError": "Message could not be sent. Mailer Error: ",
+      "contactSending": "Sending...",
+      "contactYourName": "Your Name",
+      "contactYourEmail": "Your Email",
+      "contactSubjectMessage": "Subject Message",
+      "contactYourMessage": "Your Message..."
+    }
+]
