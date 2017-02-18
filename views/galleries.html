@@ -1,0 +1,61 @@
+<div class="animation-container">
+  <div class="animation-card" ng-class="flipper">
+    <div class="galleries-container animated zoomIn animation-front">
+      <div class="galleries">
+      	<a href="" class="galleries-card-link" ng-click="gallerySelector('kids')">
+      		<img src="assets/imgs/kids/kids.jpg" alt="" class="galleries-card-img">
+      		<p class="galleries-card-text galleries-card-text1">{{lang.galleriesKids}}</p>
+      	</a>
+      	<a href="" class="galleries-card-link" ng-click="gallerySelector('maternity')">
+      		<img src="assets/imgs/maternity/maternity.jpg" alt="" class="galleries-card-img">
+      		<p class="galleries-card-text galleries-card-text2">{{lang.galleriesMaternity}}</p>
+      	</a>
+      	<a href="" class="galleries-card-link" ng-click="gallerySelector('stilllife')">
+      		<img src="assets/imgs/stilllife/stilllife.jpg" alt="" class="galleries-card-img">
+      		<p class="galleries-card-text galleries-card-text3">{{lang.galleriesStilllife}}</p>
+      	</a>
+      	<a href="" class="galleries-card-link" ng-click="gallerySelector('nature')">
+      		<img src="assets/imgs/nature/nature.jpg" alt="" class="galleries-card-img">
+      		<p class="galleries-card-text galleries-card-text4">{{lang.galleriesNature}}</p>
+      	</a>
+      	<a href="" class="galleries-card-link" ng-click="gallerySelector('england')">
+      		<img src="assets/imgs/england/england.jpg" alt="" class="galleries-card-img">
+      		<p class="galleries-card-text galleries-card-text5">{{lang.galleriesEngland}}</p>
+      	</a>
+      </div>
+    </div>
+
+    <div ng-class="galleriesCarouselContainerBackground" class="animation-back">
+      <div class="carousel-container">
+        <div class="container">
+          <br>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="{{$index}}" class="{{picture.class}}" ng-repeat="picture in pictures"></li>
+              <div class="galleries-copyright">{{lang.galleriesCopyright}}</div>
+            </ol>
+            <a class="carousel-close-button" href="" ng-click="toggleView()"><img src="assets/icons/close.png"></a>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item {{picture.class}}" ng-repeat="picture in pictures">
+                <img class="carousel-img" ng-src={{picture.ref}}>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" data-target="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" data-target="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

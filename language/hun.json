@@ -1,0 +1,29 @@
+[
+    {
+      "menuHome": "Rólam",
+      "menuGalleries": "Galériák",
+      "menuContactMe": "Kapcsolat",
+      "homeText1": "Tisztán emlékszem a napra, amikor elkezdtem fényképezni. 1998-at írtunk, apukám régi filmes fényképezőjét használtam, és kétszer is meg kellett gondolnom, mikor nyomom le a gombot, mivel 24 kép nem bizonyult soknak. Néhány évvel később megkaptam életem első digitális fényképezőjét, ezzel egy új világ nyílt meg – végtelen lehetőség fényképezésre. Akárhova mentem a fényképezőm mindig velem volt, képeket készítettem barátaimról, családomról és mindenről, ami tetszett, amire emlékezni szerettem volna. A mai napig ezt teszem.",
+      "homeText2": "2005-ben Magyarországról Angliába költöztem. Úgy terveztem, hogy egy évig maradok, angolul tanulok és gyűjtök egy jobb fényképezőre… de beleszerettem Angliába, a gyönyörű tájaiba, festői falvaiba és természetesen az emberekbe, szóval azóta is itt élek.",
+      "homeText3": "A fotózás nagy része az életemnek és több mint egy hobby. Remélem, hogy a képeim tükrözik a természet iránti szeretetemet, és hogy képes vagyok látni a szépet mindenben és mindenkiben. A fényképezés nagy örömet okoz nekem, és ha a képeim örömet okoznak másoknak, akkor boldog vagyok.",
+      "galleriesKids": "Gyerekek",
+      "galleriesMaternity": "Várandós",
+      "galleriesStilllife": "Csendélet",
+      "galleriesNature": "Természet",
+      "galleriesEngland": "Anglia",
+      "galleriesCopyright": "Copyright © 2017 Zsofia Porzsolt",
+      "contactContactForm": "Kapcsolat",
+      "contactName": "Név",
+      "contactEmail": "Email",
+      "contactSubject": "Tárgy",
+      "contactMessage": "Üzenet",
+      "contactSendMessage": "Elküld",
+      "contactSuccess": "Köszönöm! Megkaptam az üzeneted.",
+      "contactError": "Nem sikerült elküldeni az üzenetet. Hiba: ",
+      "contactSending": "Küldés...",
+      "contactYourName": "Neved",
+      "contactYourEmail": "Emailed",
+      "contactSubjectMessage": "Üzenet tárgya",
+      "contactYourMessage": "Üzeneted..."
+    }
+]

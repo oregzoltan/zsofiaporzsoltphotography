@@ -1,0 +1,29 @@
+[
+    {
+      "menuHome": "About Me",
+      "menuGalleries": "Galleries",
+      "menuContactMe": "Contact me",
+      "homeText1": "I clearly remember the day when I started to take photos. It was 1998, I was using my dad’s old camera and I had to think twice before I pressed the button as it was a camera with roll and 24 photos didn’t seem much. Few years later I got my first digital camera and a whole new world opened up – endless possibilities of taking photos. Wherever I went I had my camera with me, took pictures of my family, friends and anything I liked, everything I wanted to remember. I pretty much do the same today.",
+      "homeText2": "In 2005 I moved from Hungary to England. My plan was to stay for a year, learn English and save money for a better camera... but I fell in love with England, its beautiful countryside, picturesque villages and of course the people, so I have been living here since then.",
+      "homeText3": "I can say photography is a big part of my life and is more than just a hobby. I hope through my images you can see my love for nature and my ability of finding beauty in everything and everyone. Photography brings me joy and if my photos bring joy to others, then I’m happy.",
+      "galleriesKids": "Kids",
+      "galleriesMaternity": "Maternity",
+      "galleriesStilllife": "Still Life",
+      "galleriesNature": "Nature",
+      "galleriesEngland": "England",
+      "galleriesCopyright": "Copyright © 2017 Zsofia Porzsolt",
+      "contactContactForm": "Contact Form",
+      "contactName": "Name",
+      "contactEmail": "Email",
+      "contactSubject": "Subject",
+      "contactMessage": "Message",
+      "contactSendMessage": "Send Message",
+      "contactSuccess": "Thank you! I have received your message.",
+      "contactError": "Message could not be sent. Mailer Error: ",
+      "contactSending": "Sending...",
+      "contactYourName": "Your Name",
+      "contactYourEmail": "Your Email",
+      "contactSubjectMessage": "Subject Message",
+      "contactYourMessage": "Your Message..."
+    }
+]
