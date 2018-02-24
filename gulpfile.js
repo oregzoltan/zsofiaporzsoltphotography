@@ -14,12 +14,12 @@ gulp.task('scss', function () {
     cascade: false
   }))
   .pipe(concat('stylesheet.css'))
-  // .pipe(cssnano())
+  .pipe(cssnano())
   .pipe(gulp.dest(''));
 });
 
 gulp.task('watch', function(){
-  gulp.watch('css/**/*.scss', ['scss']);
+  gulp.watch('assets/css/**/*.scss', ['scss']);
   // Other watchers
 })
 
