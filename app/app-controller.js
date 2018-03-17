@@ -1,7 +1,7 @@
 'use strict';
 var ZsofiaPorzsoltApp = angular.module('ZsofiaPorzsoltApp');
 
-ZsofiaPorzsoltApp.controller('mainController', ['$scope', '$http', 'lang', function($scope, $http, lang) {
+ZsofiaPorzsoltApp.controller('mainController', ['$scope', '$http', 'lang', '$location', '$log', function($scope, $http, lang, $location, $log) {
   $scope.langCtrl = function(language) {
     $http({method: 'GET', url: 'language/' + language + '.json'})
     .success(function(data, status, headers, config) {
@@ -11,6 +11,17 @@ ZsofiaPorzsoltApp.controller('mainController', ['$scope', '$http', 'lang', funct
     });
   };
   $scope.langCtrl('eng');
+  $scope.getActiveNavItem = function (path) {
+    return ($location.path().substr(0, path.length) === path) ? 'nav-active' : '';
+  }
+
+// close dropdown nav, buggy
+  $(document).on("click", function(event){
+      var $trigger = $(".collapse");
+      if($trigger !== event.target && !$trigger.has(event.target).length){
+        $('.collapse').collapse('hide');
+      }
+  })
 }]);
 
 ZsofiaPorzsoltApp.controller('homeController', ['$scope', 'lang', function($scope, lang) {
@@ -20,6 +31,14 @@ ZsofiaPorzsoltApp.controller('galleriesController', ['$scope', '$http', 'lang', 
   // if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
   //     $('.animation-back').css('backface-visibility', 'visible');
   // }
+  $(".carousel").swipe({
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+      if (direction == 'left') $(this).carousel('next');
+      if (direction == 'right') $(this).carousel('prev');
+    },
+    allowPageScroll:"vertical"
+  });
+
   $scope.toggleView = function() {
     $scope.flipper = '';
   };
