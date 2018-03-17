@@ -1,0 +1,63 @@
+body {
+  font-family: 'Pacifico', cursive;
+  user-select: none;
+}
+
+a, a:hover, a:active, a:focus {
+  outline: 0
+}
+
+/*NAVBAR*/
+.navbar {
+  opacity: 0.9;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, html.touchevents .navbar-inverse .navbar-nav>li>a:hover {
+  color: rgb(157, 157, 157);
+}
+
+.nav.navbar-nav.nav-brand {
+  margin: 0;
+}
+
+.nav .nav-brand-link {
+  padding: 0;
+}
+
+.nav-brand-img {
+  height: 50px;
+  padding: 5px;
+}
+
+.nav-flag {
+  height: 24px;
+}
+
+.nav .nav-icon {
+  display: table-cell;
+}
+
+@media screen and (min-width: 768px) {
+  .nav li {
+    transition: all .3s ease-in-out;
+  }
+
+  html.no-touchevents .nav li:hover {
+    transform: scale(1.2);
+  }
+}
+
+.nav>li>a.menu-item {
+  display: inline-block;
+}
+
+.nav-active:before {
+  background: radial-gradient(ellipse at center, rgba(220, 220, 220, 0.9) 0%, transparent 80%);
+  content: '';
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  top: 70%;
+  transform: translateX(-50%);
+  width: 70%;
+}

@@ -1,141 +1,8 @@
-body {
-  font-family: 'Pacifico', cursive;
-}
 
-/*NAVBAR*/
-.navbar {
-  opacity: 0.9;
-}
-
-.nav.navbar-nav.nav-brand {
-  margin: 0;
-}
-
-.nav .nav-brand-link {
-  padding: 0;
-}
-
-.nav-brand-img {
-  height: 50px;
-  padding: 5px;
-}
-
-.nav-flag {
-  height: 24px;
-}
-
-.nav .nav-icon {
-  display: table-cell;
-}
-
-@media screen and (min-width: 768px) {
-  .nav li {
-    transition: all .3s ease-in-out;
-  }
-
-  .nav li:hover {
-    transform: scale(1.2);
-  }
-}
-
-/*HOME*/
-.home {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.home-text {
-  font-family: 'Josefin Slab', serif;
-}
-
-.home-img-container {
-  width: 25%;
-}
-
-.home-img-pic {
-  width: 100%;
-  height: 100%
-}
-
-.home-text {
-  padding: 2px;
-  width: 75%;
-  padding-top: 55px;
-  font-size: 9px;
-}
-
-
-@media screen and (min-width: 540px) {
-  .home-text {
-    font-size: 15px;
-    padding: 80px 15px;
-    width: 50%;
-  }
-  .home-img-container {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .home-img-container {
-    width: 66%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .home-text {
-    padding: 100px 10px 0;
-    width: 34%;
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .home-text {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .home-text {
-    font-size: 17px;
-  }
-}
-
-/*CONTACT*/
-.contact {
-  background: url(../background/heart.jpg) no-repeat top center;
-  background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .contact {
-    background-size: 100% 100%;
-    height: 638px;
-  }
-}
-
-.contact-result {
-  margin: 0;
-  padding: 15px;
-}
-
-.panel {
-  margin-top: 80px;
-  opacity: 0.6;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .panel {
-    width: 60%;
-  }
-}
 
 /*GALLERIES*/
 .galleries-container {
-  background: url(../background/trees.jpg) no-repeat top center;
+  background: url(assets/background/trees.jpg) no-repeat top center;
   background-size: cover;
 }
 
@@ -151,7 +18,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
   padding-top: 100px;
   max-width: 1010px;
@@ -170,7 +37,7 @@ body {
   margin-top: 5px;
   position: relative;
   transition: all .2s ease-in-out;
-  width: calc(50% - 5px);
+  width: calc(40%);
 }
 
 @media screen and (min-width: 768px) {
@@ -180,7 +47,7 @@ body {
   }
 }
 
-.galleries-card-link:hover {
+html.no-touchevents .galleries-card-link:hover {
   transform: scale(.95);
 }
 
