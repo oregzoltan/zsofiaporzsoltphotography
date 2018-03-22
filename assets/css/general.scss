@@ -16,6 +16,12 @@ a, a:hover, a:active, a:focus {
   color: rgb(157, 157, 157);
 }
 
+html.no-touchevents .navbar-nav>li:hover {
+  a {
+    color: rgb(255, 255, 255);
+  }
+}
+
 .nav.navbar-nav.nav-brand {
   margin: 0;
 }
