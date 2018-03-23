@@ -7,24 +7,24 @@ var imagemin = require('gulp-imagemin');
 
 gulp.task('scss', function () {
 
-  return gulp.src('assets/css/**/*.scss')
+  return gulp.src('assets/scss/**/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
     cascade: false
   }))
-  .pipe(concat('stylesheet.css'))
+  .pipe(concat('assets/css/stylesheet.css'))
   .pipe(cssnano())
   .pipe(gulp.dest(''));
 });
 
 gulp.task('watch', function(){
-  gulp.watch('assets/css/**/*.scss', ['scss']);
+  gulp.watch('assets/scss/**/*.scss', ['scss']);
   // Other watchers
 })
 
 gulp.task('images', function(){
-  return gulp.src('imgs/**/*.+(png|jpg|gif|svg)')
+  return gulp.src('assets/background/**/*.+(png|jpg|gif|svg)')
   .pipe(imagemin())
   .pipe(gulp.dest('imgs'))
 });

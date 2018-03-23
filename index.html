@@ -5,38 +5,38 @@
     <title>Zsofia Porzsolt Photography</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Zoltan Oreg">
+    <meta name="keywords" content="Zsofia Porszolt, Pörzsölt Zsófia, photo, photography, photographer">
+    <meta name="description" content="Zsofia Porzsolt Photography">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js" ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user");
-       })();
-    </script>
-    <script src="app/app.js"></script>
-    <script src="app/app-controller.js"></script>
-    <script src="app/modernizr-custom.js"></script>
+    <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:00" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/app-controller.js"></script>
+    <script src="app/modernizr-custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_ngjRGm0fLzADvmMrPuCM8");
+       })();
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-92234308-1', 'auto');
       ga('send', 'pageview');
-
     </script>
   </head>
-  <body>
-  <!-- <body oncontextmenu="return false;"> -->
+  <body oncontextmenu="return false;">
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -48,7 +48,6 @@
           <div class="nav navbar-nav nav-brand animated flip infinite"><a class="nav-brand-link" data-toggle="collapse" data-target=".navbar-collapse.in" href="#/home"><img src="assets/background/logo.png" class="nav-brand-img"></a></div>
           <div class="collapse navbar-collapse" id="mydropdown">
             <ul class="nav navbar-nav">
-              <!-- <li class="nav-brand animated flip infinite"><a class="nav-brand-link" data-toggle="collapse" data-target=".navbar-collapse.in" href="#/home"><img src="assets/background/logo.png" class="nav-brand-img"></a></li> -->
               <li><a ng-class="getActiveNavItem('/home')" class="menu-item" data-toggle="collapse" data-target=".navbar-collapse.in" href="#/home">{{lang.menuHome}}</a></li>
               <li><a ng-class="getActiveNavItem('/galleries')" class="menu-item" data-toggle="collapse" data-target=".navbar-collapse.in" href="#/galleries">{{lang.menuGalleries}}</a></li>
               <li><a ng-class="getActiveNavItem('/contact')" class="menu-item" data-toggle="collapse" data-target=".navbar-collapse.in" href="#/contact">{{lang.menuContactMe}}</a></li>
