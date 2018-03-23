@@ -14,23 +14,15 @@ ZsofiaPorzsoltApp.controller('mainController', ['$scope', '$http', 'lang', '$loc
   $scope.getActiveNavItem = function (path) {
     return ($location.path().substr(0, path.length) === path) ? 'nav-active' : '';
   }
-
-// close dropdown nav, buggy
   $(document).on("click", function(event){
-      var $trigger = $(".collapse");
-      if($trigger !== event.target && !$trigger.has(event.target).length){
-        $('.collapse').collapse('hide');
-      }
+    var $trigger = $(".collapse");
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+      $('.collapse').collapse('hide');
+    }
   })
 }]);
 
-ZsofiaPorzsoltApp.controller('homeController', ['$scope', 'lang', function($scope, lang) {
-}]);
-
 ZsofiaPorzsoltApp.controller('galleriesController', ['$scope', '$http', 'lang', function($scope, $http, lang) {
-  // if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
-  //     $('.animation-back').css('backface-visibility', 'visible');
-  // }
   $(".carousel").swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
       if (direction == 'left') $(this).carousel('next');
@@ -38,7 +30,6 @@ ZsofiaPorzsoltApp.controller('galleriesController', ['$scope', '$http', 'lang', 
     },
     allowPageScroll:"vertical"
   });
-
   $scope.toggleView = function() {
     $scope.flipper = '';
   };
@@ -69,13 +60,11 @@ ZsofiaPorzsoltApp.controller('contactController', ['$scope', '$http', 'lang', fu
     $scope.submitButtonDisabled = true;
     emailjs.send("gmail", "template1",{name: $scope.formData.inputName, email: $scope.formData.inputEmail, subject: $scope.formData.inputSubject, message: $scope.formData.inputMessage})
       .then(function(response) {
-        console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
         $scope.submitButtonDisabled = true;
         $scope.resultMessage = $scope.lang.contactSuccess;
         $scope.$applyAsync();
         $scope.result='bg-success';
       }, function(err) {
-        console.log("FAILED. error=", err);
         $scope.submitButtonDisabled = false;
         $scope.resultMessage = $scope.lang.contactError + err.status;
         $scope.$applyAsync();

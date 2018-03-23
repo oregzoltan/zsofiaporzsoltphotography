@@ -1,5 +1,5 @@
 .contact {
-  background: url(assets/background/heart.jpg) no-repeat top center;
+  background: url(../background/heart.jpg) no-repeat top center;
   background-size: cover;
   min-height: 100vh;
 
@@ -19,6 +19,10 @@
   margin-top: 80px;
   opacity: 0.6;
   width: 80%;
+
+  .form-control {
+    font-family: 'Open Sans', sans-serif;
+  }
 
   @media screen and (min-width: 768px) {
     width: 60%;

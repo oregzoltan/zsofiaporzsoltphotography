@@ -21,9 +21,9 @@
       "contactSuccess": "Köszönöm! Megkaptam az üzeneted.",
       "contactError": "Nem sikerült elküldeni az üzenetet. Hiba: ",
       "contactSending": "Küldés...",
-      "contactYourName": "Neved",
-      "contactYourEmail": "Emailed",
-      "contactSubjectMessage": "Üzenet tárgya",
-      "contactYourMessage": "Üzeneted..."
+      "contactYourName": "Szabó János",
+      "contactYourEmail": "szabo@gmail.com",
+      "contactSubjectMessage": "Fotók",
+      "contactYourMessage": "Helló,"
     }
 ]

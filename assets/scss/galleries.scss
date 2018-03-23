@@ -1,5 +1,5 @@
 .galleries-container {
-  background: url(assets/background/trees.jpg) no-repeat top center;
+  background: url(../background/trees.jpg) no-repeat top center;
   background-size: cover;
   min-height: 100%;
 
@@ -204,6 +204,7 @@ html.no-touchevents .galleries-card-link:hover {
   -webkit-perspective: 800;
   background-color: black;
   height: 100vh;
+  overflow: hidden;
   position: relative;
   width: 100vw;
 }

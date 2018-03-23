@@ -21,9 +21,9 @@
       "contactSuccess": "Thank you! I have received your message.",
       "contactError": "Message could not be sent. Mailer Error: ",
       "contactSending": "Sending...",
-      "contactYourName": "Your Name",
-      "contactYourEmail": "Your Email",
-      "contactSubjectMessage": "Subject Message",
-      "contactYourMessage": "Your Message..."
+      "contactYourName": "John Taylor",
+      "contactYourEmail": "taylor@gmail.com",
+      "contactSubjectMessage": "Photos",
+      "contactYourMessage": "Hi,"
     }
 ]

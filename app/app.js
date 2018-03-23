@@ -6,8 +6,7 @@ ZsofiaPorzsoltApp.value('lang', {});
 ZsofiaPorzsoltApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
     .when('/home', {
-      templateUrl: 'views/home.html',
-      controller: 'homeController'
+      templateUrl: 'views/home.html'
     })
     .when('/galleries', {
       templateUrl: 'views/galleries.html',
