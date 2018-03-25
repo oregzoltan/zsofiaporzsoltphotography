@@ -29,7 +29,13 @@
   }
 }
 
+html.no-touchevents .galleries {
+  top: 40%;
+  transform: translateX(-50%);
+}
+
 .galleries-card-link {
+  cursor: pointer;
   display: block;
   margin-bottom: 5px;
   margin-top: 5px;
