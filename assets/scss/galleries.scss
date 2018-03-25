@@ -29,11 +29,6 @@
   }
 }
 
-html.no-touchevents .galleries {
-  top: 40%;
-  transform: translateX(-50%);
-}
-
 .galleries-card-link {
   cursor: pointer;
   display: block;
@@ -41,6 +36,7 @@ html.no-touchevents .galleries {
   margin-top: 5px;
   max-width: 130px;
   position: relative;
+  transform: translateZ(0);
   transition: all .2s ease-in-out;
   width: 40%;
 
